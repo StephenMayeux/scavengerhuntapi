@@ -1,0 +1,38 @@
+{
+  "name": "scavenger-hunt-api",
+  "version": "1.0.0",
+  "description": "RESTful API server for Scavenger Hunt",
+  "main": "index.js",
+  "engines": {
+    "node": "7.3.0",
+    "npm": "3.10.10"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:StephenMayeux/scavengerhuntapi.git"
+  },
+  "author": "Stephen Mayeux",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/StephenMayeux/scavengerhuntapi/issues"
+  },
+  "homepage": "https://github.com/StephenMayeux/scavengerhuntapi#readme",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.15.0",
+    "cors": "^2.7.1",
+    "dotenv": "^2.0.0",
+    "express": "^4.13.4",
+    "jwt-simple": "^0.5.0",
+    "mongoose": "^4.4.7",
+    "morgan": "^1.7.0",
+    "nodemon": "^1.9.1",
+    "passport": "^0.3.2",
+    "passport-jwt": "^2.0.0",
+    "passport-local": "^1.0.0"
+  }
+}
