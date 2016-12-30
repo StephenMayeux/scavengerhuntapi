@@ -19,7 +19,6 @@ module.exports = function(app) {
   app.put('/user/profiles/:id', Profiles.editUser);
 
   // Hunt Routes
-  // TODO: add controllers for all
   app.post('/hunt/create', Hunts.createNewHunt);
   app.get('/hunt/user/:id', Hunts.getHuntsByUser);
   app.get('/hunt/all', Hunts.getAllHunts);
@@ -29,7 +28,6 @@ module.exports = function(app) {
   app.get('/hunt/results/:id', Hunts.getHuntResultsById);
 
   // Game Routes
-  // TODO: add controllers for all
   app.post('/game/create', Games.createNewGame);
-  app.put('/game/:id', Games.updateGameState);
+  app.put('/game/:id', Games.updateGameStateById);
 }

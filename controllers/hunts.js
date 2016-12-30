@@ -63,7 +63,7 @@ exports.findHuntByIdAndUpdate = function(req, res, next) {
 
 exports.getHuntResultsById = function(req, res, next) {
   const { id } = req.params;
-  Game.find({ hunt_id: id }, (err, results) => {
+  Game.find({ hunt_id: id, completed: true }, (err, results) => {
     if (err) return next(err);
     res.send({ results, success: true, message: 'You have fetched results' });
   });
