@@ -4,9 +4,9 @@ const Schema = mongoose.Schema;
 // Define the model
 const huntSchema = new Schema({
   user_id: { type: Schema.Types.ObjectId, ref: 'user', required: true },
-  title: { type: String, default: 'Untitled Hunt' },
+  title: { type: String },
   public: { type: Boolean, default: true },
-  questions: { type: Array, default: [] },
+  questions: { type: Array },
   active: { type: Boolean, default: true },
   link: { type: String, unique: true }
 }, { timestamps: true });
