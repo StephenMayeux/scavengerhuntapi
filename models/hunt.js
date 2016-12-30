@@ -9,7 +9,7 @@ const huntSchema = new Schema({
   questions: { type: Array, default: [] },
   active: { type: Boolean, default: true },
   link: { type: String, unique: true }
-});
+}, { timestamps: true });
 
 const ModelClass = mongoose.model('hunt', huntSchema);
 module.exports = ModelClass;
